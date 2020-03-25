@@ -1,0 +1,24 @@
+<% grade = 97 %>
+<% if grade > 60 %>
+<h1> Wiki </h1>
+<% end %>
+
+<h1><%= Time.now  %></h1>
+
+<ul>
+<% 3.times do |item|  %>
+<li><%= item %></li>
+<% end %>
+</ul>
+
+<% hash = Hash.new %>
+<% hash = {"name":"Michael", "lastname":"Jordan", "position":"SG"} %>
+
+
+<p>
+<% hash.each do |key,value| %>
+Key:  <%= key %> Value: <%= value %> <br/>
+<% end %>
+
+<%= hash[:name] %>
+</p>
